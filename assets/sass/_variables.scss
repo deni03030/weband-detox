@@ -1,0 +1,45 @@
+$theme-color-primary: #23B21F;
+$theme-color-secondary: #ffff;
+$text-color: #B9B9B9;
+$links-color: #B08F6D;
+$sections-color: #FFF9F0;
+$background-for-images: #FEFAF2;
+$try-detox-icons-color: #707070;
+
+
+//fonts
+
+$font-sanscaption-bold: "PTSansCaption-Bold";
+
+@font-face {
+    font-family: $font-sanscaption-bold;
+    src: url("/assets/fonts/PTSansCaption-Bold.ttf") format("truetype");
+}
+
+
+$font-sanscaption-regular: "PTSansCaption-Regular";
+
+@font-face {
+    font-family: $font-sanscaption-regular;
+    src: url("/assets/fonts/PTSansCaption-Regular.ttf") format("truetype");
+}
+
+
+//text-size and styles
+
+$paragraph-size: 16px;
+$first-titles-size: 40px;
+$hero-text-size: 42px;
+$second-titles-size: 25px;
+$old-price-text-size: 19px;
+
+//footer
+$footer-links-size: 14px;
+$footer-information-size: 10px;
+$footer-titles-size: 12px;
+
+//line height
+$line-height: 20px;
+
+//shadows
+$grey-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,103 @@
+.product-section {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.product-section__left-side {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-section__right-side {
+    flex-basis: 45%;
+    height: 360px;
+    /* Added fixed height to avoid changing the position when a tab is clicked */
+    margin-left: auto;
+    right: 0;
+}
+
+.left-side__bag-image-wrapper {
+    width: 560px;
+    height: 560px;
+    background-color: $background-for-images;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side__title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.title-wrapper__icons {
+    margin-left: 0;
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 20px;
+    padding-top: 10px;
+}
+
+.product-title {
+    font-size: $first-titles-size;
+    font-weight: normal;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content-text {
+    line-height: $line-height;
+    box-sizing: border-box;
+    font-family: $font-sanscaption-regular;
+}
+
+.tabs-info__menu--animation {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.tabs-info__menu {
+    position: relative;
+}
+
+.tab-buttons {
+    position: relative;
+    background: none;
+    border: none;
+    padding-top: 10px;
+    font-weight: bold;
+    color: $text-color;
+}
+
+.tab-buttons.active {
+    color: currentColor;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: $theme-color-primary;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+.tab-buttons.active::after {
+    width: 100%;
+}

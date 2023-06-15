@@ -1,0 +1,109 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    background-color: $theme-color-secondary;
+
+    &__background--left {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 260px;
+        height: 380px;
+        background-image: url("/assets/images/blured-bag-left-hero.png");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    &__background--right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 360px;
+        height: 480px;
+        background-image: url("/assets/images/blured-bag-right-hero.png");
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+//Detox gir
+.hero-section__detox-girl {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.girl-image {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+//Link to next section
+.hero-section__link-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.hero-section__link-to-next-section {
+    align-items: center;
+    text-transform: uppercase;
+    color: $links-color;
+}
+
+.link-arrow {
+    margin-left: 35px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $links-color;
+}
+
+//Logo and text
+
+.hero-section__text-wrapper {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    opacity: 0;
+    animation: reveal-animation 0.5s linear forwards;
+}
+
+@keyframes reveal-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section__logo--green {
+    width: 250px;
+    height: 80px;
+    margin-bottom: -30px;
+}
+
+.hero-section__text {
+    font-size: $hero-text-size;
+    margin-bottom: -40px;
+
+    &--bold {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,97 @@
+.try-detox {
+    padding: 100px 0;
+    background-color: $background-for-images;
+
+    &__both-sides-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left-side {
+        flex-basis: 50%;
+        /* Nested flex container */
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-right: 60px;
+        border-radius: 20px;
+        background-color: $theme-color-secondary;
+        box-shadow: $grey-box-shadow;
+    }
+
+    &__right-side {
+        flex-basis: 40%;
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+.detox-product {
+
+    &__image-wrapper {
+        flex-basis: calc(100% - 50%);
+        position: relative;
+        margin-top: -50px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+.bag-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icons-wrapper {
+    gap: 20px 0;
+    margin-bottom: 20px;
+    margin-right: auto;
+
+    &__icons--grey {
+        fill: $try-detox-icons-color;
+    }
+}
+
+.about-the-pack {
+    display: flex;
+    gap: 5px;
+
+    &__text {
+        font-weight: bold;
+    }
+
+    &__text--grey {
+        color: $text-color;
+    }
+
+    &__new-price {
+        margin: 0;
+        font-size: $hero-text-size;
+        font-weight: bold;
+    }
+
+    &__old-price {
+        margin: 0;
+        color: $links-color;
+        text-decoration: line-through;
+        font-size: $old-price-text-size;
+    }
+}
+
+.about-detox-title {
+    font-size: $second-titles-size;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.about-detox-text {
+    margin-bottom: 40px;
+}
